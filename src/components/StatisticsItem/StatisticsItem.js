@@ -5,7 +5,7 @@ function StatisticsItem({ label, percentage, bgcolor }) {
     return (
         <li className={s.item} style={{backgroundColor: bgcolor}}>
             <span className={s.label}>{label}</span>
-            <span className={s.percentage}>{percentage}</span>
+            <span className={s.percentage}>{percentage}%</span>
         </li>
     );
 }
