@@ -1,0 +1,13 @@
+.statistics {
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+.title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.statList {
+  display: flex;
+}

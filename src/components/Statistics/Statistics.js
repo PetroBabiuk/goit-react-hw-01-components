@@ -1,17 +1,20 @@
+import StatisticsItem from '../StatisticsItem';
+import getRandomColor from '../../js/randomColor';
+import s from './Statistics.module.css';
 import PropTypes from 'prop-types';
-import StatisticsItem from './StatisticsItem';
 
 function Statistics({ title, stats }) {
     return (
-        <section class="statistics">
-            <h2 class="title">{title}</h2>
+        <section className={s.statistics}>
+            <h2 className={s.title}>{title}</h2>
 
-            <ul class="stat-list">
+            <ul className={s.statList}>
                 {stats.map(stat => (
                     <StatisticsItem
                         label={stat.label}
                         percentage={stat.percentage}
                         key={stat.id}
+                        bgcolor={getRandomColor()}
                     />
                 ))}
             </ul>

@@ -20,7 +20,7 @@ function App() {
       />
 
       <Statistics
-        // title="Upload stats"
+        title="Upload stats"
         stats={statisticalData}
       />
 

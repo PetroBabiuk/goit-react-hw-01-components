@@ -1,9 +1,10 @@
-import TransactionTableItem from "./TransactionTableItem";
+import TransactionTableItem from "../TransactionTableItem";
+import s from './TransactionHistory.module.css';
 import PropTypes from 'prop-types';
 
 function TransactionHistory({ items }) {
     return (
-        <table class="transaction-history">
+        <table className={s.transactionHistory}>
             <thead>
                 <tr>
                     <th>Type</th>
@@ -21,7 +22,6 @@ function TransactionHistory({ items }) {
                         key={item.id}
                     />
                 ))}
-                
             </tbody>
         </table>
     );

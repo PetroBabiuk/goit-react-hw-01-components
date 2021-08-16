@@ -1,3 +1,4 @@
+// import s from './TransactionTableItem.module.css';
 import PropTypes from 'prop-types';
 
 function TransactionTableItem({ currency, amount, type}) {
