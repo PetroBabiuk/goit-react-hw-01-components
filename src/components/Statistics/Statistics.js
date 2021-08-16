@@ -16,6 +16,7 @@ function Statistics({ title, stats }) {
                         key={stat.id}
                         bgcolor={getRandomColor()}
                     />
+                    
                 ))}
             </ul>
         </section>
